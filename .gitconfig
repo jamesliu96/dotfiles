@@ -1,0 +1,22 @@
+[user]
+	name = James Liu
+	email = xxxx@xxxx.com
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
+[color]
+	ui = 1
+[github]
+	user = xxxx
+	token = xxxx
+[http]
+	postbuffer = 24288000
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
